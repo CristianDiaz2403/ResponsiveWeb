@@ -1,4 +1,4 @@
-/* Para pantallas pequeñas: teléfonos (hasta 480px) */
+/* Para pantallas pequeñas - teléfonos (hasta 480px) */
 @media (max-width: 480px) {
     body {
         background-color: #eeea12;
@@ -14,7 +14,7 @@
     }
 }
 
-/* Para pantallas medianas: tabletas (481px a 768px) */
+/* Para pantallas medianas- tabletas (481px a 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
     body {
         background-color: #3c8b50;
@@ -32,7 +32,7 @@
     }
 }
 
-/* Para pantallas más grandes: desktops pequeños (769px a 1024px) */
+/* Para pantallas más grandes- desktops pequeños (769px a 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
     body {
         background-color: #6752a0;
