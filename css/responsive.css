@@ -70,3 +70,34 @@
         margin-bottom: 40px;
     }
 }
+/* Ocultar el menú inicialmente en pantallas pequeñas */
+.nav-menu {
+    display: none;
+}
+
+/* Mostrar el menú tipo hamburguesa */
+.menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Mostrar el menú cuando se active */
+.nav-menu.active {
+    display: block;
+    background-color: #333;
+    padding: 10px;
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none; /* Ocultar botón de menú en pantallas grandes */
+    }
+    .nav-menu {
+        display: block; /* Mostrar el menú de forma normal */
+    }
+}
