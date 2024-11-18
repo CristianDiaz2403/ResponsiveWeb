@@ -101,3 +101,52 @@
         display: block; /* Mostrar el menú de forma normal */
     }
 }
+/* Para pantallas pequeñas - teléfonos (hasta 480px) */
+@media (max-width: 480px) {
+    .columna {
+        flex: 1 1 100%; /* Apilar columnas verticalmente */
+    }
+}
+
+/* Para pantallas medianas - tabletas (481px a 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .columna {
+        flex: 1 1 45%; /* Mostrar dos columnas */
+    }
+}
+/* Pantallas muy grandes: desktops 1440px a 1920px */
+@media (min-width: 1440px) and (max-width: 1920px) {
+    body {
+        background-color: #cfe8fc;
+        font-size: 22px;
+    }
+    header, footer {
+        padding: 1.5em 0;
+    }
+    main {
+        padding: 40px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    .columna {
+        flex: 1 1 25%; /* Mostrar cuatro columnas si es posible */
+    }
+}
+
+/* Pantallas ultra grandes: más de 1920px */
+@media (min-width: 1921px) {
+    body {
+        background-color: #e0f7fa;
+        font-size: 24px;
+    }
+    header h1 {
+        font-size: 3em;
+    }
+    main {
+        padding: 50px;
+    }
+    .flotante {
+        width: 40%; /* Ajustar la imagen flotante para más espacio */
+    }
+}
